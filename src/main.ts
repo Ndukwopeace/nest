@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // create global validation pipeline so that you can use it in any controller
   // you don't need to crreate it again because nestjs has created it already 
-  app.useGlobalPipes(new ValidationPipe())
+  app.useGlobalPipes(new ValidationPipe());
   await app.listen(3001);
 }
 bootstrap();

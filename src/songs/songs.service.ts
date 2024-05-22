@@ -7,7 +7,7 @@ export class SongsService {
 
     private readonly songs = [];
 
-    create(song){
+    create(song: any){
         this.songs.push(song);
         return this.songs;
     }
