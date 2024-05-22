@@ -1,0 +1,21 @@
+GET http://localhost:3001
+
+### SEND FETCH SONGS REQUEST
+GET http://localhost:3001/songs
+
+### CREATE A SINGLE SONG
+POST http://localhost:3001/songs/1
+Content-Type: application/json
+{
+    "releaseDate" : "2022-09-20",
+    "duration" : "02:34"
+}
+
+### Delete song
+DELETE http://localhost:3001/songs/2;
+
+### FIND ONE 
+GET http://localhost:3001/songs/1
+
+### UPDATE ONE
+PUT http://localhost:3001/songs/4
